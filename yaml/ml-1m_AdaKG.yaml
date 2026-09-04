@@ -1,0 +1,15 @@
+embedding_size: 64
+n_layers: 4
+learning_rate: 0.01
+reg_weight: 0.001
+perturb_eps: 0.3
+cl_rate: 0.01
+tau: 0.2
+mess_drop_rate: 0.3
+require_pow: True
+train_neg_sample_args: {'sample_num': 10}
+stopping_step: 20
+benchmark_filename: ['train', 'valid', 'test']
+valid_metric: "Recall@10"
+instability_metric: "symmetric_euclidean"
+seed: 54

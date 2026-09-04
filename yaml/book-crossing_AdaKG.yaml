@@ -1,0 +1,15 @@
+embedding_size: 64
+n_layers: 2
+learning_rate: 0.0001
+reg_weight: 0.0001
+perturb_eps: 1
+cl_rate: 0.05
+tau: 0.2
+mess_drop_rate: 0.2
+require_pow: True
+train_neg_sample_args: {'sample_num': 10}
+stopping_step: 20
+benchmark_filename: ['train', 'valid', 'test']
+valid_metric: "Recall@10"
+instability_metric: "cosine"
+seed: 54
